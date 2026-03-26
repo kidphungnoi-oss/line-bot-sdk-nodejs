@@ -3,6 +3,9 @@ const line = require('@line/bot-sdk');
 
 const app = express();
 
+// 🔥 ต้องมีอันนี้
+app.use(express.json());
+
 const config = {
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
   channelSecret: process.env.CHANNEL_SECRET,
